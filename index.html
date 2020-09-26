@@ -404,6 +404,94 @@
         </div>
     </section><!-- End Reccomendations Section -->
 
+    <!-- ======= Setup Section ======= -->
+
+    <section id="setup" class="setup">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Setup an event</h2>
+                <p>Create events/venues</p>
+            </div>
+
+            <div class="row no-gutters" data-aos="fade-left">
+
+                <h3>Fill out the form and a marker will show up on the map so everyone can see the event or venue!</h3>
+
+                <br />
+                <p><i>Note: You don't need to be the organizer of the event to fill out the form. If you stumble upon a
+                        rally,
+                        protest, important social event, support gatherings, or
+                        anything of the sorts, which is not on our map, please feel free to add it feel free to fill out
+                        the form
+                        with the needed information. Also you can add venues such as post offices for mail-in voting.
+                        Anything
+                        that will help the public!
+                    </i></p>
+
+                <form id="setup_event">
+
+                    <p>Event Name:</p>
+                    <input type="text" name="event_name" id="event_name">
+
+                    <br />
+                    <br />
+
+                    <label>Event Type (used for reccomendation algorithim)</label>
+                    <br />
+                    <select id="even_type" name="event_type" required>
+                        <option value="#">Select Your Event Type</option>
+                        <option value="Protest">Protest</option>
+                        <option value="Rally">Rally</option>
+                        <option value="Community Service">Community Service</option>
+                        <option value="Venue">Venue</option>
+                        <option value="Public Speaker">Public Speaker</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <br />
+                    <br />
+
+                    <p>Event Description:</p>
+                    <textarea rows="5" cols="50" name="description" id="description" required></textarea>
+
+                    <br />
+                    <br />
+
+                    <p>Event Website:</p>
+                    <textarea rows="1" cols="50" name="website" id="website" required></textarea>
+
+
+                    <br />
+                    <br />
+
+                    <p>Event Location:</p>
+                    <textarea rows="1" cols="50" name="location" id="location" placeholder="Street Address City, State"
+                        required></textarea>
+
+                    <br />
+                    <br />
+
+                    <p>Event Date:</p>
+                    <input type="text" name="event_data" id="event_date">
+
+                    <br />
+                    <br />
+                    <button type="submit" class="email_button">Create Event</button>
+
+                    <br />
+                    <br />
+                    <div class="event_alert">
+                        <p>Congrats, your event has been posted!</p>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </section><!-- End Setup Section -->
 
 
 
