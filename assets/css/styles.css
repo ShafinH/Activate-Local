@@ -512,3 +512,97 @@ body {
       transform: translate(85px, 0%);
     }
   }
+
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f5f5ff;
+  }
+  
+  .section-title {
+    padding-bottom: 40px;
+  }
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #1acc8d;
+    margin: 4px 10px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #010483;
+  }
+  .breadcrumbs {
+    padding: 20px 0;
+    background-color: #fafaff;
+    min-height: 40px;
+    margin-top: 80px;
+  }
+  
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 64px;
+    }
+  }
+  .breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .breadcrumbs h2 {
+      margin: 0 0 10px 0;
+    }
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+  }
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
