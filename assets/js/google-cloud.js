@@ -1,3 +1,23 @@
+// gmaps setup
+
+var saratoga = { lat: 37.2664, lng: -122.0296 };
+
+var votereg_SJ = { lat: 37.374989, lng: -121.896820 };
+// var votereg_saratoga = { lat: 37.268349, lng: -122.014053 };
+var votereg_Campbell = { lat: 37.266150, lng: -121.953850 };
+var votereg_Sunnyvale = { lat: 37.371050, lng: -122.037610 };
+
+var city_council = { lat: 37.268349, lng: -122.014053 }
+
+var saratoga_post = { lat: 37.266361, lng: -122.015022 }
+
+var drive = { lat: 37.935820, lng: -122.355190 };
+
+
+
+
+
+
 function initAutocomplete() {
     const map = new google.maps.Map(document.getElementById("map"), {
 
@@ -47,6 +67,11 @@ function initAutocomplete() {
         });
         map.fitBounds(bounds);
     });
+
+
+
+
+
 
 
 
