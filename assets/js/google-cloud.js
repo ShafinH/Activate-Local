@@ -13,6 +13,7 @@ var saratoga_post = { lat: 37.266361, lng: -122.015022 }
 
 var drive = { lat: 37.935820, lng: -122.355190 };
 
+
 var contentString1 = '<div id="content">' +
     '<div id="siteNotice">' +
     '</div>' +
@@ -88,6 +89,8 @@ var contentString6 = '<div id="content">' +
     '</div>';
 
 
+
+
 function initAutocomplete() {
     const map = new google.maps.Map(document.getElementById("map"), {
 
@@ -137,6 +140,15 @@ function initAutocomplete() {
         });
         map.fitBounds(bounds);
     });
+
+    /* create marker sample code
+        var latlng = new google.maps.LatLng(37.256500, -122.027150);
+        var myMarkerOptions = {
+            position: latlng,
+            map: map
+        }
+        var myMarker = new google.maps.Marker(myMarkerOptions);
+    */
 
     var infowindow1 = new google.maps.InfoWindow({
         content: contentString1
@@ -228,9 +240,7 @@ function initAutocomplete() {
     });
 
 
-
 }
-
 
 // fire base
 
@@ -246,3 +256,216 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+// email collection
+var emailRef = firebase.database().ref('email');
+
+document.getElementById('notif').addEventListener('submit', notifFunc);
+
+// submit email
+
+function notifFunc(e) {
+    e.preventDefault();
+
+    var notif_email = getInputVal('notif_email');
+    // save email 
+    saveEmail(notif_email);
+
+    //show alert
+    document.querySelector('.alert').style.display = 'block';
+
+    // Hide alert after 3 seconds
+    setTimeout(function () {
+        document.querySelector('.alert').style.display = 'none';
+    }, 3000);
+
+    // reset
+    document.getElementById('notif').reset();
+}
+// get value of input
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// save email to firebase
+function saveEmail(notif_email) {
+    var newEmailRef = emailRef.push();
+    newEmailRef.set({
+        email: notif_email
+    });
+}
+
+
+
+
+
+// geocode address to lat long
+
+// Call Geocode
+//geocode();
+
+// Get location form
+var locationForm = document.getElementById('setup_event');
+
+
+// Listen for submiot
+locationForm.addEventListener('submit', geocode);
+
+function geocode(e) {
+    // Prevent actual submit
+    e.preventDefault();
+
+    var location = document.getElementById('location').value;
+
+    axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
+        params: {
+            address: location,
+            key: 'AIzaSyCeH5_9OoOdD05Ud1aq_XwCC7x-T4W-At0'
+        }
+    })
+        .then(function (response) {
+            // Log full response
+            console.log(response);
+
+            // Formatted Address
+            var formattedAddress = response.data.results[0].formatted_address;
+            var formattedAddressOutput = `
+            <ul class="list-group">
+              <li class="list-group-item">${formattedAddress}</li>
+            </ul>
+          `;
+
+            // Address Components
+            var addressComponents = response.data.results[0].address_components;
+            var addressComponentsOutput = '<ul class="list-group">';
+            for (var i = 0; i < addressComponents.length; i++) {
+                addressComponentsOutput += `
+              <li class="list-group-item"><strong>${addressComponents[i].types[0]}</strong>: ${addressComponents[i].long_name}</li>
+            `;
+            }
+            addressComponentsOutput += '</ul>';
+
+            // Geometry
+            var lat = response.data.results[0].geometry.location.lat;
+            var lng = response.data.results[0].geometry.location.lng;
+            var geometryOutput = `
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Latitude</strong>: ${lat}</li>
+              <li class="list-group-item"><strong>Longitude</strong>: ${lng}</li>
+            </ul>
+          `;
+
+            // Output to app
+            document.getElementById('formatted-address').innerHTML = formattedAddressOutput;
+            document.getElementById('address-components').innerHTML = addressComponentsOutput;
+            document.getElementById('geometry').innerHTML = geometryOutput;
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+}
+
+
+// create event 
+
+var eventsRef = firebase.database().ref('events');
+
+// setup event 
+
+
+document.getElementById('setup_event').addEventListener('submit', eventFunc);
+
+function eventFunc(e) {
+
+    e.preventDefault();
+
+    var event_name = getInputVal('event_name');
+    var event_type = getInputVal('even_type');
+    var event_description = getInputVal('description');
+    var event_website = getInputVal('website');
+    var event_location = getInputVal('location');
+    var event_date = getInputVal('event_date');
+
+    // save Event
+    saveEvent(event_name, event_type, event_description, event_website, event_location, event_date);
+
+    //show alert
+    document.querySelector('.event_alert').style.display = 'block';
+
+    // Hide alert after 3 seconds
+    setTimeout(function () {
+        document.querySelector('.event_alert').style.display = 'none';
+    }, 3000);
+
+    // reset
+    document.getElementById('setup_event').reset();
+}
+// get value of input
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// save email to firebase
+function saveEvent(event_name, event_type, description, website, location, event_date) {
+    var newEventsRef = eventsRef.push();
+    newEventsRef.set({
+        event_name: event_name,
+        event_type: event_type,
+        event_description: description,
+        event_website: website,
+        event_location: location,
+        event_date: event_date
+
+    });
+}
+
+var ref = firebase.database().ref("events");
+
+/* 
+var keys = Object.keys(firebase.database().ref("events"));
+
+ref.on("value", function (snapshot) {
+    console.log(snapshot.val());
+}, function (error) {
+    console.log("Error: " + error.code);
+});
+
+
+for (var i = 0; i < keys.length; i++) {
+    console.log(firebase.database().ref("event_description"))
+}
+
+*/
+
+for (var i = 0; i < ref.length; i++) {
+
+    // accces all datapoints and replace it in here
+    // access ref[i] for everything
+
+    var contentString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 id="firstHeading" class="firstHeading">event_name </h1>' +
+        '<div id="bodyContent">' +
+        '<p><b>Event Type:</b> Venue' +
+        '<p><b>Event Description:</b> description' +
+        '<p><b>Event Website:</b> website' +
+        '<p><b>Event Location:</b> location' +
+        '<p><b>Event Date:</b> event_date'
+    '</div>' +
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    var marker = new google.maps.Marker({
+        position: test, // geocode event_location and then access it here
+        map: map,
+    });
+
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+}
