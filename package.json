@@ -19,5 +19,6 @@
   "dependencies": {
     "firebase": "^7.21.1",
     "radar": "^0.34.0"
-  }
+  },
+  "devDependencies": {}
 }
