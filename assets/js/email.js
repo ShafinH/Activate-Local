@@ -8,7 +8,14 @@ var subject = "A new event has been created in your area!"
 var body = firebase.database().ref("events").val;
 
 
+
 function sendEmail(host, username, password, to, from, subject, body) {
+
+
+
+
+
+
     Email.send({
         Host: host,
         Username: username,
@@ -20,4 +27,11 @@ function sendEmail(host, username, password, to, from, subject, body) {
     }).then(
         message => alert(message)
     );
+
+
+
+
+
+
+
 }
