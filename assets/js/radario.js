@@ -515,9 +515,6 @@ class Radar {
     }
 }
 
-
-
-
 export default Radar;
 
 export default Navigator;
