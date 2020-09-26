@@ -191,3 +191,5 @@ function hideAnnouncement(e) {
     document.querySelector('.announcement').style.display = 'none';
 
 }
+
+

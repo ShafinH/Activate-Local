@@ -2,736 +2,782 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Activate Local</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+  <title>Activate Local</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- Connect Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+  <!-- Connect Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-    <!-- Main CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-        <div class="container d-flex align-items-center">
 
-            <div class="logo mr-auto">
-                <h1 class="text-light"><a href="index.html"><span>Activate Local</span></a></h1>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Activate Local</span></a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#rec">Recommendations</a></li>
+          <li><a href="#setup">Setup</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>We are Activate Local</h1>
+            <h2>Find, host, or share social, political, and other events or venues regarding politics and activism in
+              your area</h2>
+            <div class="text-center text-lg-left">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/hero.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+            data-aos="fade-right">
+          </div>
+
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
+            data-aos="fade-left">
+            <h3>What our website does</h3>
+            <p>Our website contains many different features so users are able to have a great experience when trying to
+              find, host, or share their local
+              activist events or venues.
+            </p>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Finding Events and Venues</a></h4>
+              <p class="description">Want to share your voice and become an activist, but you don't know where to go?
+                Don't worry our <a href="#map">map</a>
+                section contains everything you need to know to find events and venues in your area so you can show your
+                voice and be heard. You will be able to find anything here whether that be rallies, voter registration
+                venues, post offices for mail-in voting, it's here.</p>
             </div>
 
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#map">Map</a></li>
-                    <li><a href="#rec">Recommendations</a></li>
-                    <li><a href="#setup">Setup</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#demo">Demo</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Hosting or Sharing events and venues</a></h4>
+              <p class="description">Are you organizing an event, but are struggling to get it out there? Well, our <a
+                  href="setup">setup</a>
+                feature will allow you to do so. Whether you are organizing an event, sharing one of your friends, or
+                stumbled upon something one you found and thought others should
+                know about it, fill out the form so it will show up on the map so others can see it! Share quite
+                literally any event or venue which will help
+                local communities with activism and politics.</p>
+            </div>
 
-                </ul>
-            </nav><!-- .nav-menu -->
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Notification System</a></h4>
+              <p class="description">Want to know when the next event regarding activism or politics is in your area?
+                Enter your email in the <a href="#map">map</a> section to recieve notifcations via
+                email
+                when a new event or venue is shared in your area.</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Reccommendation algorithim</a></h4>
+              <p class="description">Don't know which events to attend? Head over to the <a
+                  href="#rec">reccomendations</a> section
+                and let our algorithim do the work. Using your interests and Radar.io to calculate distance, we will
+                display
+                events and venues which are suited for you!</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Details Section ======= -->
+    <section id="details" class="details">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/details-2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>Why our website is needed</h3>
+            <p class="font-italic">
+              Local rallies and activism is the best way for voices to be heard.
+            </p>
+            <p>
+              Small, local rallies are often times the best way to reach a communities city council, however, it is hard
+              for them to catch traction.
+              Many community members don't know where to go to find these events and venues, and our website aims to
+              solve this. We created this website so that
+              it would be convient for users to find anything regarding activism, polotics, and now voting, becuase it
+              is hard to find these things.
+            </p>
+            <p>
+              Finding these events can take quite a bit of time, and the reason many people don't end up attending is
+              because they don't have the time to
+              poke around the web and find local events and venues. Our web app makes it very easy to find local events
+              just by the click of a mouse. Search your area and click
+              on the markers to find events and be lead straight to their website to find more.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="assets/img/details-3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <h3>How our website helps</h3>
+            <p>Our website is the next step towards making local politics and activism the new trend</p>
+            <ul>
+              <li><i class="icofont-check"></i> Find events and venues suited for you without wasting time</li>
+              <li><i class="icofont-check"></i> Easy location of voting Registration venues</li>
+              <li><i class="icofont-check"></i> Host and share events within minutes</li>
+            </ul>
+            <p>
+              Often times there are glaring issues in cities and commmunities, however there is not enough attention
+              towards it. The reason is because not enough people know about events to help their communities
+              politcally, or they want to do something, however
+              don't know where to start.
+            </p>
+            <p>
+              Our website directly combats this issue by making it extremly simple to find, host, and share events and
+              venues to help communities grow their local politics
+              and activism.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/details-4.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>Our Website is Innovative</h3>
+            <p class="font-italic">
+              Currently, there is no one stop website for everything regarding local politics and activism.
+            </p>
+            <p>
+              Activate Local will have any and every event you need to particpate in your local politics and have your
+              voice heard in activism.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> Our map will have any venue or event you need! City hall meetings, local
+                rallies, city council voting!</li>
+              <li><i class="icofont-check"></i> You name it and it is on our map</li>
+              <li><i class="icofont-check"></i> Our notification system will let you know when any event or venue in
+                your area is posting, meaning you don't have to
+                do any research on your own!</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Details Section -->
+
+
+
+
+    <!-- ======= Map Section ======= -->
+    <section id="map1">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Your Map</h2>
+          <p>Check our your map</p>
+        </div>
+
+        <div class="announcement">
+
+          <h3>Announcement!</h3>
+
+          <p>
+            <b>Voter Registration</b> has opened! Register online or in person. In
+            Santa Clara County you can register in person at:
+          <ul>
+            <li>San jose, Campbell, Saratoga, and Sunnyvale</li>
+            <li>And more! Check the Map for more information</li>
+          </ul>
+          </p>
+
+          <form id="hide"><button id="submit" class="hide">Hide Announcement</button></form>
 
         </div>
-    </header><!-- End Header -->
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-                    <div data-aos="zoom-out">
-                        <h1>We are Activate Local</h1>
-                        <h2>Find, host, or share social, political, and other events or venues regarding politics and
-                            activism in
-                            your area</h2>
-                        <div class="text-center text-lg-left">
-                            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-                    <img src="assets/img/hero.png" class="img-fluid animated" alt="">
-                </div>
-            </div>
+        <br />
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+
+        <div id="map"></div>
+
+        <br />
+        <div class="center">
+
+          <p class="center">Want to be notified when there is a new event in your area? Enter your email</p>
+
+          <form id="notif">
+
+            <input type="email" id="notif_email" name="email" placeholder="Enter your email" required>
+            <br />
+            <br />
+            <button type="submit" class="email_button">Submit</button>
+            <br />
+            <br />
+            <div class="alert">You have been added to the notifcation list for your area!</div>
+
+          </form>
+
         </div>
-        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28 " preserveAspectRatio="none">
-            <defs>
-                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-            </defs>
-            <g class="wave1">
-                <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-            </g>
-            <g class="wave2">
-                <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-            </g>
-            <g class="wave3">
-                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-            </g>
-        </svg>
-    </section><!-- End Hero -->
-    <main id="main">
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container-fluid">
 
-                <div class="row">
-                    <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
-                        data-aos="fade-right">
-                    </div>
 
-                    <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-                        data-aos="fade-left">
-                        <h3>What our website does</h3>
-                        <p>Our website contains many different features so users are able to have a great experience
-                            when trying to
-                            find, host, or share their local
-                            activist events or venues.
-                        </p>
 
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Finding Events and Venues</a></h4>
-                            <p class="description">Want to share your voice and become an activist, but you don't know
-                                where to go?
-                                Don't worry our <a href="#map">map</a>
-                                section contains everything you need to know to find events and venues in your area so
-                                you can show your
-                                voice and be heard. You will be able to find anything here whether that be rallies,
-                                voter registration
-                                venues, post offices for mail-in voting, it's here.</p>
-                        </div>
+      </div>
 
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Hosting or Sharing events and venues</a></h4>
-                            <p class="description">Are you organizing an event, but are struggling to get it out there?
-                                Well, our <a href="setup">setup</a>
-                                feature will allow you to do so. Whether you are organizing an event, sharing one of
-                                your friends, or
-                                stumbled upon something one you found and thought others should
-                                know about it, fill out the form so it will show up on the map so others can see it!
-                                Share quite
-                                literally any event or venue which will help
-                                local communities with activism and politics.</p>
-                        </div>
+    </section><!-- End Map Section -->
 
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="icon"><i class="bx bx-atom"></i></div>
-                            <h4 class="title"><a href="">Notification System</a></h4>
-                            <p class="description">Want to know when the next event regarding activism or politics is in
-                                your area?
-                                Enter your email in the <a href="#map">map</a> section to recieve notifcations via
-                                email
-                                when a new event or venue is shared in your area.</p>
-                        </div>
 
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="icon"><i class="bx bx-atom"></i></div>
-                            <h4 class="title"><a href="">Reccommendation algorithim</a></h4>
-                            <p class="description">Don't know which events to attend? Head over to the <a
-                                    href="#rec">reccomendations</a> section
-                                and let our algorithim do the work. Using your interests and Radar.io to calculate
-                                distance, we will
-                                display
-                                events and venues which are suited for you!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End About Section -->
-        <!-- ======= Details Section ======= -->
-        <section id="details" class="details">
-            <div class="container">
 
-                <div class="row content">
-                    <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-                        <img src="assets/img/details-2.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-                        <h3>Why our website is needed</h3>
-                        <p class="font-italic">
-                            Local rallies and activism is the best way for voices to be heard.
-                        </p>
-                        <p>
-                            Small, local rallies are often times the best way to reach a communities city council,
-                            however, it is hard
-                            for them to catch traction.
-                            Many community members don't know where to go to find these events and venues, and our
-                            website aims to
-                            solve this. We created this website so that
-                            it would be convient for users to find anything regarding activism, polotics, and now
-                            voting, becuase it
-                            is hard to find these things.
-                        </p>
-                        <p>
-                            Finding these events can take quite a bit of time, and the reason many people don't end up
-                            attending is
-                            because they don't have the time to
-                            poke around the web and find local events and venues. Our web app makes it very easy to find
-                            local events
-                            just by the click of a mouse. Search your area and click
-                            on the markers to find events and be lead straight to their website to find more.
-                        </p>
-                    </div>
-                </div>
+    <!-- ======= Recommendations Section ======= -->
 
-                <div class="row content">
-                    <div class="col-md-4" data-aos="fade-right">
-                        <img src="assets/img/details-3.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-8 pt-5" data-aos="fade-up">
-                        <h3>How our website helps</h3>
-                        <p>Our website is the next step towards making local politics and activism the new trend</p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Find events and venues suited for you without wasting time
-                            </li>
-                            <li><i class="icofont-check"></i> Easy location of voting Registration venues</li>
-                            <li><i class="icofont-check"></i> Host and share events within minutes</li>
-                        </ul>
-                        <p>
-                            Often times there are glaring issues in cities and commmunities, however there is not enough
-                            attention
-                            towards it. The reason is because not enough people know about events to help their
-                            communities
-                            politcally, or they want to do something, however
-                            don't know where to start.
-                        </p>
-                        <p>
-                            Our website directly combats this issue by making it extremly simple to find, host, and
-                            share events and
-                            venues to help communities grow their local politics
-                            and activism.
-                        </p>
-                    </div>
-                </div>
+    <section id="rec">
+      <div class="container">
 
-                <div class="row content">
-                    <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-                        <img src="assets/img/details-4.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-                        <h3>Our Website is Innovative</h3>
-                        <p class="font-italic">
-                            Currently, there is no one stop website for everything regarding local politics and
-                            activism.
-                        </p>
-                        <p>
-                            Activate Local will have any and every event you need to particpate in your local politics
-                            and have your
-                            voice heard in activism.
-                        </p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Our map will have any venue or event you need! City hall
-                                meetings, local
-                                rallies, city council voting!</li>
-                            <li><i class="icofont-check"></i> You name it and it is on our map</li>
-                            <li><i class="icofont-check"></i> Our notification system will let you know when any event
-                                or venue in
-                                your area is posting, meaning you don't have to
-                                do any research on your own!</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End Details Section -->
-
-        <!-- ======= Map Section ======= -->
-        <section id="map1">
-            <div class="container">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Your Map</h2>
-                    <p>Check our your map</p>
-                </div>
-
-                <div class="announcement">
-
-                    <h3>Announcement!</h3>
-
-                    <p>
-                        <b>Voter Registration</b> has opened! Register online or in person. In
-                        Santa Clara County you can register in person at:
-                    <ul>
-                        <li>San jose, Campbell, Saratoga, and Sunnyvale</li>
-                        <li>And more! Check the Map for more information</li>
-                    </ul>
-                    </p>
-
-                    <form id="hide"><button id="submit" class="hide">Hide Announcement</button></form>
-
-                </div>
-
-                <br />
-                <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
-
-                <div id="map"></div>
-
-                <br />
-                <div class="center">
-
-                    <p class="center">Want to be notified when there is a new event in your area? Enter your email</p>
-
-                    <form id="notif">
-
-                        <input type="email" id="notif_email" name="email" placeholder="Enter your email" required>
-                        <br />
-                        <br />
-                        <button type="submit" class="email_button">Submit</button>
-                        <br />
-                        <br />
-                        <div class="alert">You have been added to the notifcation list for your area!</div>
-
-                    </form>
-                </div>
-            </div>
-
-        </section><!-- End Map Section -->
-
-        <!-- ======= Recommendations Section ======= -->
-
-        <section id="rec">
-            <div class="container">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Reccomendations</h2>
-                    <p>Find events suited for you</p>
-                </div>
-                <div class="row no-gutters" data-aos="fade-left">
-                    <h3>Choose preferred events and our algorithim will find two events that we think best suit you.
-                    </h3>
-
-                    <form id="recommendations">
-                        <br />
-                        <p>Preferred Event Type #1:</p>
-                        <select id="pref_1" name="pref_1" required>
-                            <option value="#">Select Your Event Type</option>
-                            <option value="Protest">Protest</option>
-                            <option value="Rally">Rally</option>
-                            <option value="Community Service">Community Service</option>
-                            <option value="Venue">Venue</option>
-                            <option value="Public Speaker">Public Speaker</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <br />
-                        <br />
-                        <p>Preferred Event Type #2:</p>
-                        <select id="pref_2" name="pref_2" required>
-                            <option value="#">Select Your Event Type</option>
-                            <option value="Protest">Protest</option>
-                            <option value="Rally">Rally</option>
-                            <option value="Community Service">Community Service</option>
-                            <option value="Venue">Venue</option>
-                            <option value="Public Speaker">Public Speaker</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <br />
-                        <br />
-                        <button class="email_button" id="submit">Generate Recommendations</button>
-                        <br />
-                        <br />
-                        <div class="recommend1">
-                            <h4><b>Event Name:</b></h4>
-                            <p>Saratoga City Council</p>
-                            <h4><b>Event Type:</b></h4>
-                            <p>Venue</p>
-                            <h4><b>Event Description:</b></h4>
-                            <p>City council meeting for Saratoga. Find our agenda from our website. Every 1st and 3rd
-                                wednesday of the
-                                month. Feel free to attend.</p>
-                            <h4><b>Event Website:</b></h4>
-                            <p><a href="https://www.saratoga.ca.us/241/City-Council" target="_blank">website</a></p>
-                            <h4><b>Event Location:</b></h4>
-                            <p>13777 Fruitvale Avenue Saratoga, CA 95070</p>
-                            <h4><b>Event Date:</b></h4>
-                            <p>10/07/20</p>
-                        </div>
-                        <div class="recommend">
-                            <h4><b>Event Name:</b></h4>
-                            <p>Voter Registration Campbell</p>
-                            <h4><b>Event Type:</b></h4>
-                            <p>Venue</p>
-                            <h4><b>Event Description:</b></h4>
-                            <p>Register to vote in Campbell</p>
-                            <h4><b>Event Website</b></h4>
-                            <p>None</p>
-                            <h4><b>Event Location:</b></h4>
-                            <p> 1370 Dell Ave, Campbell, CA 95008</p>
-                            <h4><b>Event Date:</b></h4>
-                            <p>Now-October 19, 2020</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            </div>
-        </section><!-- End Reccomendations Section -->
-
-        <!-- ======= Setup Section ======= -->
-        <section id="setup" class="setup">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Setup an event</h2>
-                    <p>Create events/venues</p>
-                </div>
-                <div class="row no-gutters" data-aos="fade-left">
-                    <h3>Fill out the form and a marker will show up on the map so everyone can see the event or venue!
-                    </h3>
-                    <br />
-                    <p><i>Note: You don't need to be the organizer of the event to fill out the form. If you stumble
-                            upon a rally,
-                            protest, important social event, support gatherings, or
-                            anything of the sorts, which is not on our map, please feel free to add it feel free to fill
-                            out the form
-                            with the needed information. Also you can add venues such as post offices for mail-in
-                            voting. Anything
-                            that will help the public!
-                        </i></p>
-                    <form id="setup_event">
-
-                        <p>Event Name:</p>
-                        <input type="text" name="event_name" id="event_name">
-
-                        <br />
-                        <br />
-
-                        <label>Event Type (used for reccomendation algorithim)</label>
-                        <br />
-                        <select id="even_type" name="event_type" required>
-                            <option value="#">Select Your Event Type</option>
-                            <option value="Protest">Protest</option>
-                            <option value="Rally">Rally</option>
-                            <option value="Community Service">Community Service</option>
-                            <option value="Venue">Venue</option>
-                            <option value="Public Speaker">Public Speaker</option>
-                            <option value="Other">Other</option>
-                        </select>
-
-                        <br />
-                        <br />
-
-                        <p>Event Description:</p>
-                        <textarea rows="5" cols="50" name="description" id="description" required></textarea>
-
-                        <br />
-                        <br />
-
-                        <p>Event Website:</p>
-                        <textarea rows="1" cols="50" name="website" id="website" required></textarea>
-
-
-                        <br />
-                        <br />
-
-                        <p>Event Location:</p>
-                        <textarea rows="1" cols="50" name="location" id="location"
-                            placeholder="Street Address City, State" required></textarea>
-
-                        <br />
-                        <br />
-
-                        <p>Event Date:</p>
-                        <input type="text" name="event_data" id="event_date">
-
-                        <br />
-                        <br />
-                        <button type="submit" class="email_button">Create Event</button>
-
-                        <br />
-                        <br />
-                        <div class="event_alert">
-                            <p>Congrats, your event has been posted!</p>
-                        </div>
-                    </form>
-
-
-
-                </div>
-
-            </div>
-        </section><!-- End Setup Section -->
-
-
-
-
-
-        <!-- ======= Team Section ======= -->
-        <section id="team" class="team">
-            <div class="container">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Team</h2>
-                    <p>Team</p>
-                </div>
-
-                <div class="row" data-aos="fade-left">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="pic"><img src="assets/img/team/shafin.png" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Shafin Haque</h4>
-                                <span>Fullstack</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="pic"><img src="assets/img/team/usuf.png" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Yousuf Zaman</h4>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="pic"><img src="assets/img/team/henrik.png" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Henrik Zhang</h4>
-                                <span>UI/UX</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </section><!-- End Team Section -->
-        <!-- ======= F.A.Q Section ======= -->
-        <section id="faq" class="faq section-bg">
-            <div class="container">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h2>F.A.Q</h2>
-                    <p>Frequently Asked Questions</p>
-                </div>
-
-                <div class="faq-list">
-                    <ul>
-                        <li data-aos="fade-up">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
-                                href="#faq-list-1">What type of events are on the map? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
-                                <p>
-                                    Events on the map can be anything which affects communities socially and politcally.
-                                    This means they
-                                    can be voter registration venues, community service events, political rallies, and
-                                    much more!
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
-                                class="collapsed">Can I sign up for events through the website?<i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                                <p>
-                                    As of now we do not have that functionality. However, we do lead you straight to the
-                                    events website
-                                    they entered when they created the event. In the future, we plan on adding this
-                                    so it will be even easier.
-
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
-                                class="collapsed">How does the recommendation algorithim work? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                                <p>
-                                    Our recommendation algorithim intakes the user's two preferred event types and then
-                                    finds events
-                                    suited for the user. From here it narrows down the events to events
-                                    only within a certain distance of the user. We are able to do this with Radar.io.
-                                </p>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section><!-- End F.A.Q Section -->
-
-
-        <!-- ======= Demo Section ======= -->
-
-        <section id="demo">
-            <div class="container">
-
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Demo</h2>
-                    <p>Watch our demo</p>
-                    <center>Will be here after recording :)</center>
-                </div>
-
-
-                <center><iframe width="560" height="315" src="" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen align:center></iframe></center>
-
-
-
-            </div>
-        </section><!-- End Demo Section -->
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up">
-                    <h2>Contact</h2>
-                    <p>Contact Us</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-                        <div class="info">
-                            <div class="email">
-                                <i class="icofont-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>shafin1025@gmail.com</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="form-row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" data-rule="minlen:4"
-                                        data-msg="Please enter at least 4 chars" />
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" data-rule="email"
-                                        data-msg="Please enter a valid email" />
-                                    <div class="validate"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" data-rule="minlen:4"
-                                    data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validate"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                    data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validate"></div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End Contact Section -->
-    </main><!-- End #main -->
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-info">
-                            <h3>Activate Local</h3>
-                            <p class="pb-3"><em>Find, host, or share social, political, and other events or venues
-                                    regarding activism
-                                    in your area</em>
-                            </p>
-                            <p>
-                                <strong>Email:</strong> shafin1025@gmail.com<br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#map">Map</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#rec">Recommendations</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#setup">Setup</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#demo">Demo</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="section-title" data-aos="fade-up">
+          <h2>Reccomendations</h2>
+          <p>Find events suited for you</p>
         </div>
-    </footer><!-- End Footer -->
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-    <div id="preloader"></div>
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <!--  JS Files -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
-    <script src="https://js.radar.io/v3/radar.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/algorithim.js"></script>
-    <script src="assets/js/google-cloud.js"></script>
-    <script src="assets/js/radario.js"></script>
-    <script src="assets/js/remove.js"></script>
-    <script src="assets/js/email.js"></script>
-    <script src="assets/js/geocode.js"></script>
-    </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjWfWoYtAhvc6i9C4V5SekngUKeyXOYoc&callback=initAutocomplete&libraries=places&v=weekly"
-        defer></script>
+
+        <div class="row no-gutters" data-aos="fade-left">
+
+          <h3>Choose preferred events and our algorithim will find two events that we think best suit you.</h3>
+
+
+          <form id="recommendations">
+            <br />
+
+            <p>Preferred Event Type #1:</p>
+            <select id="pref_1" name="pref_1" required>
+              <option value="#">Select Your Event Type</option>
+              <option value="Protest">Protest</option>
+              <option value="Rally">Rally</option>
+              <option value="Community Service">Community Service</option>
+              <option value="Venue">Venue</option>
+              <option value="Public Speaker">Public Speaker</option>
+              <option value="Other">Other</option>
+            </select>
+
+
+            <br />
+            <br />
+
+            <p>Preferred Event Type #2:</p>
+            <select id="pref_2" name="pref_2" required>
+              <option value="#">Select Your Event Type</option>
+              <option value="Protest">Protest</option>
+              <option value="Rally">Rally</option>
+              <option value="Community Service">Community Service</option>
+              <option value="Venue">Venue</option>
+              <option value="Public Speaker">Public Speaker</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <br />
+            <br />
+
+            <button class="email_button" id="submit">Generate Recommendations</button>
+
+            <br />
+            <br />
+
+
+            <div class="recommend1">
+
+              <h4><b>Event Name:</b></h4>
+              <p>Saratoga City Council</p>
+
+              <h4><b>Event Type:</b></h4>
+              <p>Venue</p>
+
+              <h4><b>Event Description:</b></h4>
+              <p>City council meeting for Saratoga. Find our agenda from our website. Every 1st and 3rd wednesday of the
+                month. Feel free to attend.</p>
+
+              <h4><b>Event Website:</b></h4>
+              <p><a href="https://www.saratoga.ca.us/241/City-Council" target="_blank">website</a></p>
+
+              <h4><b>Event Location:</b></h4>
+              <p>13777 Fruitvale Avenue Saratoga, CA 95070</p>
+
+              <h4><b>Event Date:</b></h4>
+              <p>10/07/20</p>
+
+            </div>
+
+
+            <div class="recommend">
+
+              <h4><b>Event Name:</b></h4>
+              <p>Voter Registration Campbell</p>
+
+              <h4><b>Event Type:</b></h4>
+              <p>Venue</p>
+
+              <h4><b>Event Description:</b></h4>
+              <p>Register to vote in Campbell</p>
+
+              <h4><b>Event Website</b></h4>
+              <p>None</p>
+
+              <h4><b>Event Location:</b></h4>
+              <p> 1370 Dell Ave, Campbell, CA 95008</p>
+
+              <h4><b>Event Date:</b></h4>
+              <p>Now-October 19, 2020</p>
+
+            </div>
+
+
+          </form>
+
+
+
+
+        </div>
+
+
+      </div>
+
+      </div>
+    </section><!-- End Reccomendations Section -->
+
+
+    <!-- ======= Setup Section ======= -->
+
+    <section id="setup" class="setup">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Setup an event</h2>
+          <p>Create events/venues</p>
+        </div>
+
+        <div class="row no-gutters" data-aos="fade-left">
+
+          <h3>Fill out the form and a marker will show up on the map so everyone can see the event or venue!</h3>
+
+          <br />
+          <p><i>Note: You don't need to be the organizer of the event to fill out the form. If you stumble upon a rally,
+              protest, important social event, support gatherings, or
+              anything of the sorts, which is not on our map, please feel free to add it feel free to fill out the form
+              with the needed information. Also you can add venues such as post offices for mail-in voting. Anything
+              that will help the public!
+            </i></p>
+
+          <form id="setup_event">
+
+            <p>Event Name:</p>
+            <input type="text" name="event_name" id="event_name">
+
+            <br />
+            <br />
+
+            <label>Event Type (used for reccomendation algorithim)</label>
+            <br />
+            <select id="even_type" name="event_type" required>
+              <option value="#">Select Your Event Type</option>
+              <option value="Protest">Protest</option>
+              <option value="Rally">Rally</option>
+              <option value="Community Service">Community Service</option>
+              <option value="Venue">Venue</option>
+              <option value="Public Speaker">Public Speaker</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <br />
+            <br />
+
+            <p>Event Description:</p>
+            <textarea rows="5" cols="50" name="description" id="description" required></textarea>
+
+            <br />
+            <br />
+
+            <p>Event Website:</p>
+            <textarea rows="1" cols="50" name="website" id="website" required></textarea>
+
+
+            <br />
+            <br />
+
+            <p>Event Location:</p>
+            <textarea rows="1" cols="50" name="location" id="location" placeholder="Street Address City, State"
+              required></textarea>
+
+            <br />
+            <br />
+
+            <p>Event Date:</p>
+            <input type="text" name="event_data" id="event_date">
+
+            <br />
+            <br />
+            <button type="submit" class="email_button">Create Event</button>
+
+            <br />
+            <br />
+            <div class="event_alert">
+              <p>Congrats, your event has been posted!</p>
+            </div>
+          </form>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Setup Section -->
+
+
+
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Team</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/shafin.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Shafin Haque</h4>
+                <span>Fullstack</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/usuf.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Yousuf Zaman</h4>
+                <span>Frontend</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/henrik.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Henrik Zhang</h4>
+                <span>UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
+                href="#faq-list-1">What type of events are on the map? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Events on the map can be anything which affects communities socially and politcally. This means they
+                  can be voter registration venues, community service events, political rallies, and much more!
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
+                class="collapsed">Can I sign up for events through the website?<i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  As of now we do not have that functionality. However, we do lead you straight to the events website
+                  they entered when they created the event. In the future, we plan on adding this
+                  so it will be even easier.
+
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
+                class="collapsed">How does the recommendation algorithim work? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Our recommendation algorithim intakes the user's two preferred event types and then finds events
+                  suited for the user. From here it narrows down the events to events
+                  only within a certain distance of the user. We are able to do this with Radar.io.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+
+    <!-- ======= Demo Section ======= -->
+
+    <section id="demo">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Demo</h2>
+          <p>Watch our demo</p>
+        </div>
+
+
+        <center><iframe width="560" height="315" src="" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen align:center></iframe></center>
+
+
+
+      </div>
+    </section><!-- End Demo Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>shafin1025@gmail.com</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Activate Local</h3>
+              <p class="pb-3"><em>Find, host, or share social, political, and other events or venues regarding activism
+                  in your area</em>
+              </p>
+              <p>
+                <strong>Email:</strong> shafin1025@gmail.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#map">Map</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#rec">Recommendations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#setup">Setup</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#demo">Demo</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!--  JS Files -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
+  <script src="https://js.radar.io/v3/radar.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/algorithim.js"></script>
+  <script src="assets/js/google-cloud.js"></script>
+  <script src="assets/js/radario.js"></script>
+
+
+
+  </script>
+
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjWfWoYtAhvc6i9C4V5SekngUKeyXOYoc&callback=initAutocomplete&libraries=places&v=weekly"
+    defer></script>
 
 </body>
 
