@@ -1,0 +1,23 @@
+{
+  "name": "activate-local",
+  "version": "1.0.0",
+  "description": "Find, host, or share social, political, and other events or venues regarding in your area.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShafinH/Activate-Local.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShafinH/Activate-Local/issues"
+  },
+  "homepage": "https://github.com/ShafinH/Activate-Local#readme",
+  "dependencies": {
+    "firebase": "^7.21.1",
+    "radar": "^0.34.0"
+  }
+}
