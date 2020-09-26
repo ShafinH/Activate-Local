@@ -377,6 +377,8 @@ document.getElementById('setup_event').addEventListener('submit', eventFunc);
 
 function eventFunc(e) {
 
+
+
     e.preventDefault();
 
     var event_name = getInputVal('event_name');
@@ -397,13 +399,26 @@ function eventFunc(e) {
         document.querySelector('.event_alert').style.display = 'none';
     }, 3000);
 
+
+
     // reset
+
     document.getElementById('setup_event').reset();
 }
+
+
+
+
 // get value of input
 function getInputVal(id) {
     return document.getElementById(id).value;
 }
+
+
+
+
+
+
 
 // save email to firebase
 function saveEvent(event_name, event_type, description, website, location, event_date) {
@@ -417,12 +432,23 @@ function saveEvent(event_name, event_type, description, website, location, event
         event_date: event_date
 
     });
+
+
+
+
 }
+
+
+
+
 
 var ref = firebase.database().ref("events");
 
+
+
 /* 
 var keys = Object.keys(firebase.database().ref("events"));
+
 
 ref.on("value", function (snapshot) {
     console.log(snapshot.val());
@@ -431,16 +457,19 @@ ref.on("value", function (snapshot) {
 });
 
 
+
 for (var i = 0; i < keys.length; i++) {
     console.log(firebase.database().ref("event_description"))
 }
 
 */
 
+
 for (var i = 0; i < ref.length; i++) {
 
     // accces all datapoints and replace it in here
     // access ref[i] for everything
+
 
     var contentString = '<div id="content">' +
         '<div id="siteNotice">' +
@@ -467,5 +496,6 @@ for (var i = 0; i < ref.length; i++) {
     marker.addListener('click', function () {
         infowindow.open(map, marker);
     });
+
 
 }
