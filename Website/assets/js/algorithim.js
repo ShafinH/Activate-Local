@@ -11,7 +11,7 @@ function showRec(e) {
     }, 1000);
     setTimeout(function () {
         document.querySelector('.recommend1').style.display = 'block';
-    }, 1000);
+    }, 500);
 
 
     document.getElementById('recommendations').reset()

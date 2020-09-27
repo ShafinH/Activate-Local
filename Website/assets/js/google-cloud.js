@@ -13,6 +13,8 @@ var saratoga_post = { lat: 37.266361, lng: -122.015022 }
 
 var drive = { lat: 37.935820, lng: -122.355190 };
 
+var demo = { lat: 37.266102, lng: -122.029083 };
+
 
 var contentString1 = '<div id="content">' +
     '<div id="siteNotice">' +
@@ -87,6 +89,7 @@ var contentString6 = '<div id="content">' +
     '<p><b>Event Date:</b> 10/07/20' +
     '</div>' +
     '</div>';
+
 
 
 
@@ -238,6 +241,11 @@ function initAutocomplete() {
     marker6.addListener('click', function () {
         infowindow6.open(map, marker6);
     });
+
+    // -------------------------------
+
+
+
 
 
 }
