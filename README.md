@@ -3,3 +3,5 @@ Find, host, or share social, political, and other events or venues regarding in 
 <ul>
   <li><b>Won best Radar.io hack at New Friends, New Hacks</b></li>
 </ul>
+
+Devpost Submission: https://devpost.com/software/activate-local
