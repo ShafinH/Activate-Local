@@ -14,5 +14,9 @@ if (date == ref.val()) {
         });
     }
 
+    else {
+
+    }
+
 
 }
