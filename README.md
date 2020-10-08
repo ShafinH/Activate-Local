@@ -5,4 +5,4 @@ Find, host, or share social, political, and other events or venues regarding in 
 <b>Best Radar.io hack at New Friends, New Hacks</b></li>
 
 
-Devpost Submission: https://devpost.com/software/activate-local
+Learn More: https://devpost.com/software/activate-local
